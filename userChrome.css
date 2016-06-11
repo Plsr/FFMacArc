@@ -1,0 +1,192 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+* {
+  font-family: 'Proxima Nova', sans-serif !important;
+}
+
+.tab-stack {
+	border: none !important;
+	border-radius: none !important;
+}
+
+#titlebar {
+  height: 50px !important;
+}
+
+#titlebar-buttonbox-container {
+  padding-top: 5px !important;
+  padding-left: 5px !important;
+}
+
+#titlebar-content {
+	background-color: #2F343F !important;
+}
+
+#TabsToolbar {
+	background-color: #2F343F !important;
+  padding-left: 10px !important;
+}
+
+#PanelUI-button {
+  background-color: #F5F6F7 !important;
+}
+
+#nav-bar-customization-target {
+  height: 30px !important;
+  background-color: #F5F6F7 !important;
+}
+
+#nav-bar {
+  background-image: none !important;
+  background-color: #F5F6F7 !important;
+  height: 70px !important;
+  padding: 5px 0 !important;
+}
+
+/* back button fix */
+#back-button:not(:-moz-lwtheme) {
+	background: none !important;
+  background-image: none !important;
+	border-radius: 0px !important;
+  border: 0px !important;
+  border: none !important;
+  border-image-width: 0px !important;
+  border-top-color: #F5F6F7 !important;
+  border-right-color: #F5F6F7 !important;
+  border-bottom-color: #F5F6F7 !important;
+  border-left-color: #F5F6F7 !important;
+  box-shadow: none !important;2E926F !important;
+  max-width: 20px !important;
+  height: auto !important;
+  text-shadow: none !important;
+}
+
+#forward-button {
+  box-shadow: none !important;
+  border: none !important;
+  background-color: #F5F6F7 !important;
+  max-width: 23px !important;
+  height: auto !important;
+}
+
+
+#identity-box {
+  margin-right: 5px !important;
+  border-right: none !important;
+  border-top-left-radius: 4px !important;
+  border-bottom-left-radius: 4px !important;
+}
+
+#identity-box:hover {
+  background-color: #dddddd !important;
+}
+
+#urlbar, #urlbar[selected],
+#searchbar, #searchbar[selected] {
+  height: 30px !important;
+  background: none !important;
+  background-color: #ffffff !important;
+  border: 1px solid #CFD6E6 !important;
+  border-radius: 4px !important;
+  box-shadow: none !important;
+  font-size: 14px !important;
+  margin-left: 10px !important;
+  margin-top: -2px !important;
+}
+
+#urlbar[focused=true],
+#searchbar[focused=true] {
+  border: 1px solid #929AAD !important;
+}
+
+.searchbar-textbox:focus, .searchbar-textbox[focused=true] {
+  outline: 0px none transparent !important;
+  border: 0px !important;
+  box-shadow: none !important;
+}
+
+#urlbar-reload-button {
+  border-left: none !important;
+}
+
+#PersonalToolbar {
+  background-color: #F5F6F7 !important;
+  color: #333333 !important;
+}
+
+.tab-background-middle {
+  border-left: none !important;
+  border-right: none !important;
+  margin: 0 !important;
+}
+
+.tab-background,
+.tabs-newtab-button {
+  -moz-margin-end: 0 !important;
+  -moz-margin-start: 0 !important;
+}
+
+.tabbrowser-tab {
+  border: 1px solid #F5F6F7 !important;
+  border-top-left-radius: 2px !important;
+  border-top-right-radius: 2px !important;
+}
+
+.tabbrowser-tab, .tab-stack {
+  margin: 0 !important;
+}
+
+.tabbrowser-tab[selected] {
+  margin: 0 !important;
+  background-image: linear-gradient(rgb(245,246,247), rgb(245,246,247))!important;
+  background-size: 100% 100% !important;
+  opacity: 1 !important;
+  color: #333333 !important;
+  text-shadow: none !important;
+  font-weight: 600 !important;
+}
+
+.tabbrowser-tab:not([selected="true"]) {
+  border: none !important;
+  color: #ACB6CC !important;
+  text-shadow: none !important;
+  opacity: 1 !important;
+}
+
+toolbarbutton {
+  text-shadow: none !important;
+}
+
+.tab-colose-button .close-icon {
+  box-shadow: none !important;
+  outline-color: none !important;
+  border: none !important;
+  text-shadow: none !important;
+}
+
+.tabbrowser-arrowscrollbox > .arrowscrollbox-scrollbox {
+  -moz-padding-end: 0 !important;
+  -moz-padding-start: 0 !important;
+}
+
+/* fix tab bg color and removes australis */
+#TabsToolbar .tab-background {
+    background: transparent !important;
+}
+#TabsToolbar .tab-background-start,
+#TabsToolbar .tab-background-end {
+    background: transparent !important;
+    background-image: none !important;
+}
+#TabsToolbar .tab-background-middle {
+    background: transparent !important;
+}
+
+#TabsToolbar .tab-background-start::before,  #TabsToolbar .tab-background-end::before {
+  background-image: none !important;
+}
+
+.tab-background-start[selected=true]:-moz-locale-dir(ltr)::after,
+.tab-background-end[selected=true]:-moz-locale-dir(ltr)::after {
+  background-image: none!important;
+}
